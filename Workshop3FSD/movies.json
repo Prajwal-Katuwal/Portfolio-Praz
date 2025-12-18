@@ -1,0 +1,22 @@
+{
+  "movies": [
+    {
+      "id": "e9d0",
+      "title": "PK",
+      "genre": "Comedy ",
+      "year": 2014
+    },
+    {
+      "id": "76f0",
+      "title": "My love life ",
+      "genre": "Peak Comedy ",
+      "year": 2025
+    },
+    {
+      "id": "9ac9",
+      "title": "Central Intelligence",
+      "genre": "Comedy ",
+      "year": 2018
+    }
+  ]
+}

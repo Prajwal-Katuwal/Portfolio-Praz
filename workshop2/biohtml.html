@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prajwal Katuwal Portfolio</title>
+<link href="Style.css" rel="stylesheet">
+</head>
+<body>
+    <script src="script.js"></script>
+
+<header>
+    <video autoplay muted loop id="bgVideo">
+        <source src="mov_bbb.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+    <div class="headerContent">
+        <h1>Prajwal Katuwal</h1>
+        <nav>
+            <ul id="Navigation">
+                <li><a href="#AboutMe">About</a></li>
+                <li><a href="#Project">Project</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="Details">
+
+    <div id="AboutMe" class="sectionCard">
+        <h1>About Me</h1>
+        <p>
+            Hii, Im prajwal Katuwal and im a 18 year old student who enjoys website development and a bit of cybersecurity, although i didnt choose cybersecurity
+                because i wanted to have computer science as my backup option too!
+        </p>
+    </div>
+
+    <div id="Project" class="sectionCard">
+        <h1>Projects</h1>
+        <div class="projectCard">
+            <h2>My Game Project</h2>
+            <p>
+                I created a game through Unity that teaches the basics of First Aid.
+            </p>
+        </div>
+    </div>
+
+    <div id="Contact" class="sectionCard">
+    <h1>Contact Me</h1>
+    <form id="contactForm" novalidate>
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Name"> 
+        <span class="error" id="nameError"></span><br>
+
+        <label>Email</label>
+        <input type="text" id="email" placeholder="Email">
+        <span class="error" id="emailError"></span><br>
+
+        <label>Message</label>
+        <input type="text" id="message" placeholder="Message Here">
+        <span class="error" id="messageError"></span><br>
+
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+</section>
+
+<footer>
+    <p>All Copyright Reserved © 2025</p>
+</footer>
+
+</body>
+</html>

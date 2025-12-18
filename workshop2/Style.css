@@ -1,0 +1,196 @@
+/* GLOBAL STYLING */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #46254e;
+    color: #e0e0e0;
+}
+
+/* HEADER VIDEO BACKGROUND */
+header {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* VIDEO */
+#bgVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    opacity: 1; /* make video fully visible */
+    filter: brightness(1.2); /* increase brightness slightly */
+    z-index: -2;
+}
+
+/* OVERLAY */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.3), rgba(0,0,0,0.5)); 
+    /* lighten the overlay by reducing alpha */
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.headerContent h1 {
+    font-size: 4rem;
+    color: #8354a4;
+    text-shadow: 0 0 20px #477d43;
+    margin-bottom: 20px;
+}
+
+/* NAVIGATION */
+#Navigation {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+}
+
+#Navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: rgba(0,255,255,0.1);
+    transition: all 0.3s ease;
+}
+
+#Navigation a:hover {
+    background: #344918;
+    color: #000;
+    transform: scale(1.1);
+}
+
+/* SECTION CARDS */
+.sectionCard {
+    background: linear-gradient(145deg, #1a1f3a, #11152a);
+    margin: 50px auto;
+    padding: 40px;
+    width: 80%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(140, 30, 159, 0.35);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sectionCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(92, 11, 206, 0.35);
+}
+
+.sectionCard h1 {
+    color: #344918;
+    margin-bottom: 20px;
+}
+
+/* PROJECT CARD */
+.projectCard {
+    background: #11142e;
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 5px 20px rgba(0,255,255,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,255,255,0.35);
+}
+
+.projectCard img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    border: 2px solid #344918;
+    margin-bottom: 15px;
+}
+
+/* ABOUT TEXT */
+#AboutMe p, .projectCard p {
+    color: #ccc;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* CONTACT FORM */
+form {
+    background: #11142e;
+    padding: 30px;
+    border-radius: 15px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0 5px 25px rgba(0,255,255,0.2);
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-top: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #344918;
+    background: #0e1225;
+    color: #fff;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background: #344918;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #344918;
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0a0e20;
+    color: #344918;
+    font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 900px) {
+    form {
+        width: 80%;
+    }
+
+    .sectionCard {
+        width: 90%;
+    }
+
+    .projectCard img {
+        max-width: 100%;
+    }
+}
